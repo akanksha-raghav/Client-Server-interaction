@@ -1,4 +1,4 @@
-import socket
+import socket #socket module is imported
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM,0)
 #server coding
 s.bind(("127.0.0.1",5000))
