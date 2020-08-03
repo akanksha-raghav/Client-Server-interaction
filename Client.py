@@ -1,11 +1,17 @@
-import socket  #module
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM,0)
-s.bind(("127.0.0.1",5000))
-s.listen(5)
-conn,addr=s.accept()
-print("You got connected from address",addr)
+import socket
+port = 3000
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # create a socket object
+CHUNK = 65535
+# instead of explicitly binding the socket, i will let OS do it.
+# ephemaral ports: the ports that are automatically assigned by os
+# OS will bind this for us
+hostname = '127.0.0.1'
 while True:
-	a="Akanksha==>"+input("")
-	conn.send(bytes(a,encoding='utf-8'))
-	print(conn.recv(1024))
-	
+    s.connect((hostname, port))
+    message = input("Type message: ")
+    data = message.encode("ascii")
+    s.send(data)
+    # data received:
+    data = s.recv(CHUNK)
+    text = data.decode('ascii')
+    print(f'Tanu: {text}')
