@@ -13,3 +13,7 @@ Python’s socket module provides an interface to the Berkeley sockets API.
 ### OS Module
 <b>The OS module in python provides functions for interacting with the operating system. OS, comes under Python's standard utility modules.</b>
 This module provides a portable way of using operating system dependent functionality. The *os* and *os. path* modules include many functions to interact with the file system.
+
+### Request Module
+The requests module allows you to send HTTP requests using Python.It abstracts the complexities of making requests behind a beautiful, simple API so that you can focus on interacting with services and consuming data in your application.
+The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
