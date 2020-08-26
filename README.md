@@ -17,3 +17,10 @@ This module provides a portable way of using operating system dependent function
 ### Request Module
 The requests module allows you to send HTTP requests using Python.It abstracts the complexities of making requests behind a beautiful, simple API so that you can focus on interacting with services and consuming data in your application.
 The HTTP request returns a Response Object with all the response data (content, encoding, status, etc).
+
+## tqdm
+tqm means "Progress" .In addition to its low overhead, tqdm uses smart algorithms to predict the remaining time and to skip unnecessary iteration displays, which allows for a negligible overhead in most cases.
+tqdm works on any platform (Linux, Windows, Mac, FreeBSD, NetBSD, Solaris/SunOS), in any console or in a GUI, and is also friendly with IPython/Jupyter notebooks.
+
+## time
+The Python time module provides many ways of representing time in code, such as objects, numbers, and strings. It also provides functionality other than representing time, like waiting during code execution and measuring the efficiency of your code.
